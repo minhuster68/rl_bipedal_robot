@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Assem.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.61810566148853 0.852358257522334 1.31200349836816"
+        rpy="0 0 0" />
+      <mass
+        value="0.691272524367652" />
+      <inertia
+        ixx="0.00179818156893696"
+        ixy="-6.73961762236765E-07"
+        ixz="2.36931261953476E-10"
+        iyy="0.000910846989775591"
+        iyz="3.95770924716962E-08"
+        izz="0.00220419368434546" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1R">
+    <inertial>
+      <origin
+        xyz="0.0216791526538073 -3.59088608667957E-05 0.0198410076409694"
+        rpy="0 0 0" />
+      <mass
+        value="0.0439251847494173" />
+      <inertia
+        ixx="7.419213024296E-06"
+        ixy="1.76038259105975E-08"
+        ixz="-5.84387301022653E-06"
+        iyy="4.19728220726573E-05"
+        iyz="9.7143212961844E-09"
+        izz="4.2695974807547E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem.SLDASM/meshes/link1R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem.SLDASM/meshes/link1R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1R"
+    type="continuous">
+    <origin
+      xyz="0.68104 -1.3109 0.89235"
+      rpy="1.5708 -1.0344 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1R" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link2R">
+    <inertial>
+      <origin
+        xyz="0.0704842164539703 -5.09785780576921E-05 0.00499258085565435"
+        rpy="0 0 0" />
+      <mass
+        value="0.0409696917611631" />
+      <inertia
+        ixx="4.07935788655227E-06"
+        ixy="-1.01132316890405E-09"
+        ixz="2.11300215271454E-08"
+        iyy="9.92625677292106E-05"
+        iyz="1.54954515179655E-11"
+        izz="0.000102663959383853" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem.SLDASM/meshes/link2R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem.SLDASM/meshes/link2R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2R"
+    type="continuous">
+    <origin
+      xyz="0.0749999999999999 0 0.031"
+      rpy="0 0 -1.78343844791078" />
+    <parent
+      link="link1R" />
+    <child
+      link="link2R" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="endpointR">
+    <inertial>
+      <origin
+        xyz="1.18411980332134E-06 -0.029188076695661 2.15137483361438E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.39404194246184" />
+      <inertia
+        ixx="0.000393972937191074"
+        ixy="-1.11212347125766E-08"
+        ixz="-4.78539467822537E-07"
+        iyy="0.000716987139688872"
+        iyz="-2.02061240314965E-08"
+        izz="0.000394256553444458" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem.SLDASM/meshes/endpointR.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem.SLDASM/meshes/endpointR.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jointendR"
+    type="continuous">
+    <origin
+      xyz="0.14 0 0.00999999999999879"
+      rpy="-1.5707963267949 0 1.66873286233154" />
+    <parent
+      link="link2R" />
+    <child
+      link="endpointR" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link3R">
+    <inertial>
+      <origin
+        xyz="0.0272566892648303 5.17504255990175E-05 0.0125673989046905"
+        rpy="0 0 0" />
+      <mass
+        value="0.035144203868027" />
+      <inertia
+        ixx="4.26440193426715E-06"
+        ixy="-1.20237632937082E-08"
+        ixz="-2.30912819833261E-06"
+        iyy="3.36922310510363E-05"
+        iyz="-4.42371615446595E-09"
+        izz="3.61215255722546E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem.SLDASM/meshes/link3R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem.SLDASM/meshes/link3R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3R"
+    type="continuous">
+    <origin
+      xyz="0.68104 -1.3109 0.81235"
+      rpy="1.5708 0.85617 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="link3R" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link4R">
+    <inertial>
+      <origin
+        xyz="0.0700000000005406 -5.13336723744207E-05 0.00500000000000023"
+        rpy="0 0 0" />
+      <mass
+        value="0.0406862889202399" />
+      <inertia
+        ixx="4.08543363100097E-06"
+        ixy="5.45912734505397E-19"
+        ixz="-1.7136532841024E-19"
+        iyy="9.78895762770687E-05"
+        iyz="-8.68708208124289E-21"
+        izz="0.000101299562880117" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem.SLDASM/meshes/link4R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem.SLDASM/meshes/link4R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4R"
+    type="continuous">
+    <origin
+      xyz="0.075 0 0.02"
+      rpy="0 0 1.7127" />
+    <parent
+      link="link3R" />
+    <child
+      link="link4R" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link1L">
+    <inertial>
+      <origin
+        xyz="0.0216791528658966 -3.59088274282104E-05 -0.0111590172816588"
+        rpy="0 0 0" />
+      <mass
+        value="0.043925184815285" />
+      <inertia
+        ixx="7.41921298192342E-06"
+        ixy="1.76039364253612E-08"
+        ixz="-5.8438730519653E-06"
+        iyy="4.19728220374616E-05"
+        iyz="9.71430229690335E-09"
+        izz="4.26959747772089E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem.SLDASM/meshes/link1L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem.SLDASM/meshes/link1L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1L"
+    type="continuous">
+    <origin
+      xyz="0.52404 -1.3109 0.89235"
+      rpy="-1.5708 -1.0146 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1L" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link2L">
+    <inertial>
+      <origin
+        xyz="0.0704842164538044 -5.09785770338445E-05 0.00499258085565435"
+        rpy="0 0 0" />
+      <mass
+        value="0.0409696917611632" />
+      <inertia
+        ixx="4.07935788655224E-06"
+        ixy="-1.01132316888457E-09"
+        ixz="2.11300215271262E-08"
+        iyy="9.92625677292114E-05"
+        iyz="1.54954514802004E-11"
+        izz="0.000102663959383854" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem.SLDASM/meshes/link2L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem.SLDASM/meshes/link2L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2L"
+    type="continuous">
+    <origin
+      xyz="0.0750000000000001 0 -0.0110000250000003"
+      rpy="3.14159265358979 0 1.82054307798178" />
+    <parent
+      link="link1L" />
+    <child
+      link="link2L" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="endpointL">
+    <inertial>
+      <origin
+        xyz="1.18411989269429E-06 -0.0291880766956611 2.1513746928381E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.39404194246184" />
+      <inertia
+        ixx="0.000393972937191072"
+        ixy="-1.11212347121826E-08"
+        ixz="-4.78539467822455E-07"
+        iyy="0.00071698713968887"
+        iyz="-2.02061240323212E-08"
+        izz="0.000394256553444458" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem.SLDASM/meshes/endpointL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem.SLDASM/meshes/endpointL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jointendL"
+    type="continuous">
+    <origin
+      xyz="0.139999999999833 0 -0.00999999999999912"
+      rpy="1.5707963267949 0 -0.932316231449313" />
+    <parent
+      link="link2L" />
+    <child
+      link="endpointL" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link3L">
+    <inertial>
+      <origin
+        xyz="0.0272566847586091 5.17580566299358E-05 -0.00743262665821631"
+        rpy="0 0 0" />
+      <mass
+        value="0.0351441877241624" />
+      <inertia
+        ixx="4.26440053703284E-06"
+        ixy="-1.20258055309482E-08"
+        ixz="-2.30913144934425E-06"
+        iyy="3.36922430547454E-05"
+        iyz="-4.42391844830516E-09"
+        izz="3.61215344241451E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem.SLDASM/meshes/link3L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem.SLDASM/meshes/link3L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3L"
+    type="continuous">
+    <origin
+      xyz="0.535037141050128 -1.31086730652498 0.812350744788092"
+      rpy="-1.5707963267949 0.960614308680286 1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="link3L" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link4L">
+    <inertial>
+      <origin
+        xyz="0.07 -5.13336724696778E-05 -0.00499997499999971"
+        rpy="0 0 0" />
+      <mass
+        value="0.0406862889202398" />
+      <inertia
+        ixx="4.08543363100097E-06"
+        ixy="3.32672190034126E-19"
+        ixz="-1.76263948007471E-19"
+        iyy="9.78895762770684E-05"
+        iyz="-1.03028465686194E-20"
+        izz="0.000101299562880117" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem.SLDASM/meshes/link4L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem.SLDASM/meshes/link4L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4L"
+    type="continuous">
+    <origin
+      xyz="0.0749999999999997 0 0"
+      rpy="3.14159265358979 0 -1.79951415912076" />
+    <parent
+      link="link3L" />
+    <child
+      link="link4L" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
